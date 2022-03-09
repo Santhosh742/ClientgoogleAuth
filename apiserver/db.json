@@ -1,0 +1,39 @@
+{
+  "streams": [
+    {
+      "title": "new stream",
+      "description": "this stream is great",
+      "id": 1
+    },
+    {
+      "title": "new stream2",
+      "description": "this stream is greatest",
+      "id": 2
+    },
+    {
+      "title": "Big Stream",
+      "description": "Ultimate stream ",
+      "id": 3
+    },
+    {
+      "title": "Car Stream",
+      "description": "New Stream is here",
+      "id": 4
+    },
+    {
+      "title": "new zone  stream",
+      "description": "Cool Stream here...",
+      "id": 5
+    },
+    {
+      "title": "Bang Bang",
+      "description": "New stream Song",
+      "id": 6
+    },
+    {
+      "title": "bbk",
+      "description": "bbq",
+      "id": 7
+    }
+  ]
+}

@@ -68,3 +68,34 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+All about npm json server:
+
+link : npmjs.com/package/json-server
+
+What is REST Conventions?
+
+REST Conventions are pre-defined system for defining different routes on api, that work with given type of reference.
+
+> Standardized system for defining a API's.
+
+1. Create new folder apiserver
+2. run npm init command
+3. run npm install --save json-server 
+4. Create db.json file inside apiserver folder.
+
+React Devtool setup:
+
+1. install cmd: npm install --save-dev redux-devtools-extension
+2. import { composeWithDevTools } from 'redux-devtools-extension';
+3. const store = createStore(
+        reducers,
+        composeWithDevTools(applyMiddleware(thunk))
+     );
+
+     Note :
+
+     Object.value = built in JavaScript Function, it will take object as an argument, all value inside object gone to be pulled out and inserted into an array.
+     
+      
