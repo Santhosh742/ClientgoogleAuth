@@ -11,7 +11,6 @@ class GoogleAuth extends React.Component{
                 scope: 'email'
             }).then(() =>{
                 this.auth = window.gapi.auth2.getAuthInstance();
-                console.log("adding id",this.auth);
                 this.autoChange(this.auth.isSignedIn.get());
                 this.auth.isSignedIn.listen(this.autoChange);
             });
@@ -20,7 +19,7 @@ class GoogleAuth extends React.Component{
 
     autoChange = (isSignedIn)  =>{
         if(isSignedIn){
-            this.props.signInAuth();
+            this.props.signInAuth(this.auth.currentUser.get().getId());
         }else {
             this.props.signOutAuth();
         }

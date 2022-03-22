@@ -10,6 +10,7 @@ import {
     } from './types';
 
 export const signInAuth = userId =>{
+    console.log(userId)
     return {
         type: SIGN_IN,
         payload: userId
@@ -24,8 +25,7 @@ export const signOutAuth = () =>{
 
 export const createStream = formValues => async (dispatch, getState) => {
     const {userId} = getState().auth;
-    console.log(userId)
-const response = await stream.post('/streams', formValues);
+const response = await stream.post('/streams', {...formValues, userId});
 
 dispatch({ type: CREATE_STREAM, payload: response.data});
 };
